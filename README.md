@@ -31,7 +31,7 @@ public class TopLevelClass {
 When you call a `NestedInNestedClass` instance's `toString()` this will include the enclosing classes in the beginning
 
 ```
-TopLevelClass.NestedClass.NestedInNestedClass{property=name} //autov-value-nested-tostring
+TopLevelClass.NestedClass.NestedInNestedClass{property=name} //auto-value-nested-tostring
 ```
 
 as opposed to AutoValue's default (simple class name)
