@@ -1,3 +1,11 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "io.codearte.gradle.nexus:gradle-nexus-staging-plugin:0.5.3"
+    }
+}
 import org.gradle.internal.jvm.Jvm
 
 apply plugin: 'java'
@@ -19,3 +27,6 @@ dependencies {
     testCompile 'com.google.testing.compile:compile-testing:0.10'
     testCompile files(Jvm.current().getToolsJar())
 }
+
+apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
+apply from: rootProject.file('gradle/gradle-mvn-promote.gradle')

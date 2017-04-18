@@ -1,0 +1,22 @@
+language: java
+
+jdk:
+  - oraclejdk7
+  - oraclejdk8
+
+after_success:
+  - .buildscript/deploy_snapshot.sh
+
+env:
+  global:
+    - secure: "iEv23J9B4/0bOQWApunT9KtzU89/dynhzVCEa/Y/Ha+Xuzks+IdO089oVSBWBnDQCSFfgzAx62XJ2395Jm16+HubZnFKGzjrgrPsUVYNSt6Yp2j7hZBEYocUqixTxWabuPVobR55o+RUICoqBl6B2XwXokmCea3zKDAWB1LkTfQ78r5kFD5lrmffoVdj8XsH1wTuhajoh3HbpEuoQ6do4MYV7ytoyPCjntzGj75A6MOVCBS0XcUlU/nzd+BBAcMPnfB+Y/o60WNqUMqTBnwlVrr+WBxnHEUK8ulw6A3fBVPlibtILI714UXdk9A9f59nEBGAGN1aKB1byoX3vaJlCGHa4tY8S/7UNSEVe1soE8W+cVQKhiOGAnE6UhUCfMQNdmI6Rf4hrVKAdRcZVqo4PF1B+fiOt8Isqtd9+G+1Bk3TEiWkMjHaiu/KXz/59SC5ZUntINREmnp3Fx1F3nsHwDktrlnHvEHeSFW5BxVCP7A3O3+6IhPFXrDvL+vzk2m9m+0dt8cDSRXSR1BXUMOnV/iI310W6U7TqpM8k0Ml1bhQXsngSgbcHK0nHG688E9mFOEaxEuEgEmlPPLY5u3y31t83uMJ6dKOH17gEVWJ5YVoyefRF5xD0CYM/L01jRiOr03f8EE/7M7bNEUAKpnDZ+5QqEZmYvh3ak4ij3E5oBM="
+    - secure: "JJ2EKZzMcuawE8ovJe95N8vr+W7L+iO+9P9cMpk/RBhe4Pmxpy3tWWfOVWbPtHwcjC0b4wtHT1+2+g7+UhyAx4iwUh1Kg1KusxS4eZol6NLS1/LIsvjPIck7e4u7POxafRVu7GnDd1bQcbOsqxG+uAHo37kCbBxoDtzJIKThTCoH7GHwdtKJBv4PNfzn7kDPxtgNnbVCZpQOobU1TNmDAivc17u4AYQO0IRY+YqPX9yUHO4GccZrw+DROphOtxcWbmzuAXBmNDwqRL1Tz5xW5qnL64AfDAQLx6o7eovDkXWXyec68DKj3gAsjj/r0NEgt52TXgnKZp9svya8qozLgU/7Ky0oL4PljmD012fUP6duO8vG66JgYqWQWqXmVWBsRoBykyHNSRePrTlQuqXzjDEIW2yP3LlpXKQXPNzy4QuUuSSVZe0gxUZxFQJrOC921BHmgMjoFBM9C2T8JxpzmuxWAQPhSd2UAah0B9TtYTnDSjHwSdTl1AZf5iOyo81tTw6ZmbC35WUQsYTS5NTaFPrAi+sYO3sf7NDBAjmN+IyjTvsiO+9McAkopsrnS91dtQW8O51ZhmuRd5NmLN/y9yPzJ7Yiutbc86eHNFDHGTs2WCvZv35cHwvNAVLefp1g2N9YfW2Elwcqq2p1xn0Rewc2M9wjvTENDhxG1APvEBU="
+
+notifications:
+  email: false
+
+sudo: false
+
+cache:
+  directories:
+    - $HOME/.gradle
