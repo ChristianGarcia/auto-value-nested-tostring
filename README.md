@@ -1,4 +1,4 @@
-# auto-value-nested-tostring
+# AutoValue: Nested toString()
 An extension for Google's [AutoValue](https://github.com/google/auto/tree/master/value) that prepends the enclosing classes names to a `@Nested` annotated nested 
 class's `toString()`.
 
