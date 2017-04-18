@@ -1,4 +1,7 @@
 # AutoValue: Nested toString()
+[![Build Status](https://travis-ci.org/ChristianGarcia/auto-value-nested-tostring.svg?branch=master)](https://travis-ci.org/ChristianGarcia/auto-value-nested-tostring)
+[![](https://img.shields.io/maven-central/v/com.christiangp/auto-value-nested-tostring.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.christiangp%22%20a%3A%22auto-value-nested-tostring%22)
+
 An extension for Google's [AutoValue](https://github.com/google/auto/tree/master/value) that prepends the enclosing classes names to a `@Nested` annotated nested 
 class's `toString()`.
 
