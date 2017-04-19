@@ -1,1 +1,3 @@
-rootProject.name = 'auto-value-nested-tostring'
+include ':auto-value-nested-tostring'
+include ':auto-value-nested-tostring-annotations'
+rootProject.name = 'auto-value-nested-tostring-root'

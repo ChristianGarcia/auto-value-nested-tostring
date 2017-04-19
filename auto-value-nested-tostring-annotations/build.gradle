@@ -1,0 +1,7 @@
+apply plugin: 'java'
+
+sourceCompatibility = versions.java
+targetCompatibility = versions.java
+
+apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
+apply from: rootProject.file('gradle/gradle-mvn-promote.gradle')

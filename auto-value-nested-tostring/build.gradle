@@ -1,0 +1,23 @@
+apply plugin: 'java'
+
+sourceCompatibility = versions.java
+targetCompatibility = versions.java
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile libraries.javaPoet
+    compile libraries.autoValue
+    compileOnly libraries.autoService
+
+    testCompile libraries.junit
+    testCompile libraries.truth
+    testCompile libraries.compileTesting
+    testCompile libraries.toolsJar
+}
+
+apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
+apply from: rootProject.file('gradle/gradle-mvn-promote.gradle')
