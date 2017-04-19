@@ -5,14 +5,7 @@
 An extension for Google's [AutoValue](https://github.com/google/auto/tree/master/value) that prepends the enclosing classes names to the `toString()` method of a `@Nested` annotated nested class.
 
 ## Usage
-Define a `@Nested` annotation in your project and apply it to any nested class whose `toString()` you wish to modify in order to include the enclosing classes.
-
-```java
-@Retention(SOURCE)
-@Target(TYPE)
-public @interface Nested {
-}
-```
+Apply the `@Nested` annotation to any nested class whose `toString()` you wish to modify in order to include the enclosing classes.
 
 ```java
 public class TopLevelClass {
@@ -45,6 +38,7 @@ NestedInNestedClass{property=name} //AutoValue's default
 Add a Gradle dependency:
 ```groovy
 annotationProcessor 'com.christiangp:auto-value-nested-tostring:<latest_version>'
+provided 'com.christiangp:auto-value-nested-tostring-annotations:<latest_version>'
 ```
 
 or Maven:
