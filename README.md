@@ -21,7 +21,7 @@ public class TopLevelClass {
 }
 ```
 
-When you call a `NestedInNestedClass` instance's `toString()` this will include the enclosing classes in the beginning
+When you call a `NestedInNestedClass` instance's `toString()` this will include the enclosing classes at the beginning
 
 ```
 TopLevelClass.NestedClass.NestedInNestedClass{property=name} //auto-value-nested-tostring
