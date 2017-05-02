@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/ChristianGarcia/auto-value-nested-tostring.svg?branch=master)](https://travis-ci.org/ChristianGarcia/auto-value-nested-tostring)
 [![](https://img.shields.io/maven-central/v/com.christiangp/auto-value-nested-tostring.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.christiangp%22%20a%3A%22auto-value-nested-tostring%22)
 
-An extension for Google's [AutoValue](https://github.com/google/auto/tree/master/value) that prepends the enclosing classes names to the `toString()` method of a `@Nested` annotated nested class.
+An extension for Google's [AutoValue](https://github.com/google/auto/tree/master/value) that prepends the enclosing classes' names to the `toString()` method of a `@Nested` annotated nested class.
 
 ## Usage
 Apply the `@Nested` annotation to any nested class whose `toString()` you wish to modify in order to include the enclosing classes.
